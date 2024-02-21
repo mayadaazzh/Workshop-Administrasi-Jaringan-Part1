@@ -363,13 +363,13 @@ Fungsi utama dari perintah sudo adalah:
     <img src="img/no5.png">
 6. Langkah - langkah penambahan user sebagai user sudo
    - Jalankan perintah "su -" untuk masuk sebagai root, setelah menjalankan perintah tersebut akan diminta ketikkan kata sandi root.<br>
-    <img src="img/no6-1.png">
+    <img src="img/no6-1.png"><br>
     - Setelah berhasil masuk sebagai root, jalankan perintah "visudo" untuk mengedit file konfigurasi sudoers dalam editor teks yaitu nano :<br>
-    <img src="img/no6-2.png">
+    <img src="img/no6-2.png"><br>
     - Cari bagian yang bertuliskan "# User privilege specification". Di bagian ini, tambahkan pengguna (username) sebagai pengguna sudo yang menyatakan hak akses root.<br>
     Contoh : <b>mayada ALL=(ALL:ALL) ALL </b><br>
     <b>Root ALL=(ALL:ALL) ALL </b> – baris ini berarti user root mempunyai hak-hak istimewa yang tidak terbatas dan dapat menjalankan semua command pada sistem. <br>
-    <img src="img/no6-3.png">
+    <img src="img/no6-3.png"><br>
     - Setelah menambahkan baris tersebut, simpan perubahan pada file konfigurasi sudoers. Untuk menggunakan editor nano, tekan Ctrl + O untuk menyimpan, diikuti dengan Enter, dan kemudian tekan Ctrl + X untuk keluar dari editor.
     - Sekarang pengguna telah ditambahkan sebagai pengguna sudo dengan hak akses yang sesuai. Pengecekan : 
     <img src="img/no6-4.png">
